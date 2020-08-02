@@ -416,20 +416,20 @@ keyFunc_paste_1(){
 }
 
 
-keyFunc_undoRedo(){
-    global
-    if(ctrlZ)
-    {
-        SendInput, ^{z}
-        ctrlZ:=""
-    }
-    Else
-    {
-        SendInput, ^{y}
-        ctrlZ:=1
-    }
-    Return
-}
+; keyFunc_undoRedo(){
+;     global
+;     if(ctrlZ)
+;     {
+;         SendInput, ^{z}
+;         ctrlZ:=""
+;     }
+;     Else
+;     {
+;         SendInput, ^{y}
+;         ctrlZ:=1
+;     }
+;     Return
+; }
 
 
 keyFunc_cut_2(){
@@ -672,12 +672,13 @@ keyFunc_tabScript(){
 
 
 keyFunc_openCpasDocs(){
-    if(isLangChinese())
-    {
-        Run, https://capslox.com/capslock-plus
-    } else {
-        Run, https://capslox.com/capslock-plus/en.html
-    }
+    ; if(isLangChinese())
+    ; {
+    ;     Run, https://capslox.com/capslock-plus
+    ; } else {
+    ;     Run, https://capslox.com/capslock-plus/en.html
+    ; }
+    Run, https://github.com/zszq/capslock-plus
     return
 }
 
@@ -853,4 +854,196 @@ keyFunc_unshiftWinMinimizeStack(){
 
 keyFunc_winTransparent(){
     winTransparent()
+}
+
+
+
+; 打开剪切板
+keyFunc_openClipboard() {
+    SendInput, #{v}
+    return
+}
+
+; 关闭当前标签页
+keyFunc_closeCurTap(){
+    SendInput, ^{w}
+    return
+}
+
+; 恢复
+keyFunc_recover(){
+    SendInput, ^{y}
+    return
+}
+
+; 撤销
+keyFunc_undoRedo(){
+    SendInput, ^{z}
+    Return
+}
+
+; 保存
+keyFunc_saveFile(){
+    SendInput, ^{s}
+    Return
+}
+
+; 搜索
+keyFunc_searchFile(){
+    SendInput, ^{f}
+    return
+}
+
+; 使用谷歌翻译（无墙）选中文字
+keyFunc_translate_gg() {
+    TransSel()
+}
+
+; 左跳词
+keyFunc_jumpLeftWord(){
+    SendInput, ^{Left}
+    return
+}
+
+; 右跳词
+keyFunc_jumpRightWord(){
+    SendInput, ^{Right}
+    return
+}
+
+; 复制当前行到上一行
+keyFunc_CopyLineUp(){
+    tmpClipboard:=ClipboardAll
+    Clipboard:=""
+    SendInput,{home}+{End}^{c}
+    ClipWait, 0.1
+    SendInput,{up}{end}{enter}+{insert}
+    Sleep, 50
+    Clipboard:=tmpClipboard
+    Return
+}
+
+; 复制当前行到下一行
+keyFunc_copyLineDown(){
+    tmpClipboard:=ClipboardAll
+    Clipboard:=""
+    SendInput,{home}+{End}^{c}
+    ClipWait, 0.1
+    SendInput,{end}{enter}+{insert}
+    Sleep, 50
+    Clipboard:=tmpClipboard
+    return
+}
+
+; 注释当前行
+keyFunc_CommonLine(){
+    SendInput, ^{/}
+    Return
+}
+
+; 创建虚拟桌面
+keyFunc_CreateVirtualPanel(){
+    SendInput, ^#{d}
+}
+
+; 关闭当前虚拟桌面
+keyFunc_CloseVirtualPanel(){
+    SendInput, ^#{F4}
+}
+
+; 转到上一个虚拟桌面
+keyFunc_ChangeLastVirtualPanel(){
+    SendInput, ^#{left}
+}
+
+; 转到下一个虚拟桌面
+keyFunc_ChangeNextVirtualPanel(){
+    SendInput, ^#{right}
+}
+
+; 关闭当前窗口
+keyFunc_CloseCurWindow(){
+    SendInput, !{F4}
+}
+
+; 左跳词删除
+keyFunc_jumpBackspace(){
+    SendInput, ^{BackSpace}
+    Return
+}
+
+; 向右边跳词删除
+keyFunc_jumpDelete(){
+    SendInput, ^{delete}
+    Return
+}
+
+; 向上选择
+keyFunc_UpSelectWord(){
+    SendInput, +{Up}
+    return
+}
+
+; 向下选择
+keyFunc_DownSelectWord(){
+    SendInput, +{Down}
+    return
+}
+
+; 向左选择
+keyFunc_LeftSelectWord(){
+    SendInput, +{left}
+    return
+}
+
+; 向右选择
+keyFunc_RightSelectWord(){
+    SendInput, +{right}
+    return
+}
+
+; 选中文字切换为小写
+keyFunc_switchSelLowerCase(){
+    SwitchSelCase("L")
+    return
+}
+
+; 选中文字切换为大写
+keyFunc_switchSelUpperCase(){
+    SwitchSelCase("U")
+    return
+}
+
+; 向上新开一行
+keyFunc_enterUpWherever(){
+    SendInput, {Up}{End}{Enter}
+    Return
+}
+
+; 弹出U盘
+keyFunc_drivePop(){
+    DriveGet, list, list
+    loop,Parse,list
+    {
+        ; 设定为你想弹出的驱动器的标号。
+        popDriver:=A_LoopField . ":"
+        DriveGet, type, type, %popDriver%
+        ; 如果是移动磁盘，则执行弹出操作
+        if(type == "Removable")
+        {
+            hVolume := DllCall("CreateFile", Str, "\\.\" . popDriver
+            , UInt, 0x80000000 | 0x40000000
+            , UInt, 0x1 | 0x2
+            , UInt, 0
+            , UInt, 0x3
+            , UInt, 0, UInt, 0)
+            if hVolume <> -1
+            {
+                DllCall("DeviceIoControl", UInt, hVolume , UInt, 0x2D4808
+                    , UInt, 0, UInt, 0, UInt, 0, UInt, 0 , UIntP, dwBytesReturned    
+                    , UInt, 0)
+                DllCall("CloseHandle", UInt, hVolume)
+            }
+        }
+    }
 }

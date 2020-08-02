@@ -61,6 +61,8 @@ allowRunOnClipboardChange:=true
 #Include lib_mathBoard.ahk
 #include lib_loadAnimation.ahk
 
+#include lib_ggTrans.ahk
+
 
 ;change dir
 #include ..\userAHK
@@ -802,6 +804,392 @@ return
 ;      keyFunc_outWinMinimizeStack()
 ;      Capslock2:=""
 ;  return
+
+
+;---------------------caps+lshift----------------
+
+<+a::
+try
+    runFunc(keyset.caps_lshift_a)
+Capslock2:=""
+return
+
+<+b::
+try
+    runFunc(keyset.caps_lshift_b)
+Capslock2:=""
+Return
+
+<+c::
+try
+    runFunc(keyset.caps_lshift_c)
+Capslock2:=""
+return
+
+<+d::
+try
+    runFunc(keyset.caps_lshift_d)
+Capslock2:=""
+Return
+
+<+e::
+try
+    runFunc(keyset.caps_lshift_e)
+Capslock2:=""
+Return
+
+<+f::
+try
+    runFunc(keyset.caps_lshift_f)
+Capslock2:=""
+Return
+
+<+g::
+try
+    runFunc(keyset.caps_lshift_g)
+Capslock2:=""
+Return
+
+<+h::
+try
+    runFunc(keyset.caps_lshift_h)
+Capslock2:=""
+return
+
+<+i::
+try
+    runFunc(keyset.caps_lshift_i)
+Capslock2:=""
+return
+
+<+j::
+try
+    runFunc(keyset.caps_lshift_j)
+Capslock2:=""
+return
+
+<+k::
+try
+    runFunc(keyset.caps_lshift_k)
+Capslock2:=""
+return
+
+<+l::
+try
+    runFunc(keyset.caps_lshift_l)
+Capslock2:=""
+return
+
+<+m::
+try
+    runFunc(keyset.caps_lshift_m)
+Capslock2:=""
+return
+
+<+n::
+try
+    runFunc(keyset.caps_lshift_n)
+Capslock2:=""
+Return
+
+<+o::
+try
+    runFunc(keyset.caps_lshift_o)
+Capslock2:=""
+return
+
+<+p::
+try
+    runFunc(keyset.caps_lshift_p)
+Capslock2:=""
+Return
+
+<+q::
+try
+    runFunc(keyset.caps_lshift_q)
+Capslock2:=""
+return
+
+<+r::
+try
+    runFunc(keyset.caps_lshift_r)
+Capslock2:=""
+Return
+
+<+s::
+try
+    runFunc(keyset.caps_lshift_s)
+Capslock2:=""
+Return
+
+<+t::
+try
+    runFunc(keyset.caps_lshift_t)
+Capslock2:=""
+Return
+
+<+u::
+try
+    runFunc(keyset.caps_lshift_u)
+Capslock2:=""
+return
+
+<+v::
+try
+    runFunc(keyset.caps_lshift_v)
+Capslock2:=""
+Return
+
+<+w::
+try
+    runFunc(keyset.caps_lshift_w)
+Capslock2:=""
+Return
+
+<+x::
+try
+    runFunc(keyset.caps_lshift_x)
+Capslock2:=""
+Return
+
+<+y::
+try
+    runFunc(keyset.caps_lshift_y)
+Capslock2:=""
+return
+
+<+z::
+try
+    runFunc(keyset.caps_lshift_z)
+Capslock2:=""
+Return
+
+<+`::
+    runFunc(keyset.caps_lshift_backquote)
+Capslock2:=""
+return
+
+<+1::
+try
+    runFunc(keyset.caps_lshift_1)
+Capslock2:=""
+return
+
+<+2::
+try
+    runFunc(keyset.caps_lshift_2)
+Capslock2:=""
+return
+
+<+3::
+try
+    runFunc(keyset.caps_lshift_3)
+Capslock2:=""
+return
+
+<+4::
+try
+    runFunc(keyset.caps_lshift_4)
+Capslock2:=""
+return
+
+<+5::
+try
+    runFunc(keyset.caps_lshift_5)
+Capslock2:=""
+return
+
+<+6::
+try
+    runFunc(keyset.caps_lshift_6)
+Capslock2:=""
+return
+
+<+7::
+try
+    runFunc(keyset.caps_lshift_7)
+Capslock2:=""
+return
+
+<+8::
+try
+    runFunc(keyset.caps_lshift_8)
+Capslock2:=""
+return
+
+<+9::
+try
+    runFunc(keyset.caps_lshift_9)
+Capslock2:=""
+Return
+
+<+0::
+try
+    runFunc(keyset.caps_lshift_0)
+Capslock2:=""
+Return
+
+<+-::
+try
+    runFunc(keyset.caps_lshift_minus)
+Capslock2:=""
+return
+
+<+=::
+try
+    runFunc(keyset.caps_lshift_equal)
+Capslock2:=""
+Return
+
+<+BackSpace::
+try
+    runFunc(keyset.caps_lshift_backspace)
+Capslock2:=""
+Return
+
+<+Tab::
+try
+    runFunc(keyset.caps_lshift_tab)
+Capslock2:=""
+Return
+
+<+[::
+try
+    runFunc(keyset.caps_lshift_leftSquareBracket)
+Capslock2:=""
+Return
+
+<+]::
+try
+    runFunc(keyset.caps_lshift_rightSquareBracket)
+Capslock2:=""
+Return
+
+<+\::
+try
+    runFunc(keyset.caps_lshift_Backslash)
+Capslock2:=""
+return
+
+<+`;::
+try
+    runFunc(keyset.caps_lshift_semicolon)
+Capslock2:=""
+Return
+
+<+'::
+try
+    runFunc(keyset.caps_lshift_quote)
+Capslock2:=""
+return
+
+<+Enter::
+try
+    runFunc(keyset.caps_lshift_enter)
+Capslock2:=""
+Return
+
+<+,::
+try
+    runFunc(keyset.caps_lshift_comma)
+Capslock2:=""
+Return
+
+<+.::
+try
+    runFunc(keyset.caps_lshift_dot)
+Capslock2:=""
+return
+
+<+/::
+try
+    runFunc(keyset.caps_lshift_slash)
+Capslock2:=""
+Return
+
+<+Space::
+try
+    runFunc(keyset.caps_lshift_space)
+Capslock2:=""
+Return
+
+<+RAlt::
+try
+    runFunc(keyset.caps_lshift_ralt)
+Capslock2:=""
+return
+
+<+F1::
+try
+    runFunc(keyset.caps_lshift_f1)
+Capslock2:=""
+return
+
+<+F2::
+try
+    runFunc(keyset.caps_lshift_f2)
+Capslock2:=""
+return
+
+<+F3::
+try
+    runFunc(keyset.caps_lshift_f3)
+Capslock2:=""
+return
+
+<+F4::
+try
+    runFunc(keyset.caps_lshift_f4)
+Capslock2:=""
+return
+
+<+F5::
+try
+    runFunc(keyset.caps_lshift_f5)
+Capslock2:=""
+return
+
+<+F6::
+try
+    runFunc(keyset.caps_lshift_f6)
+Capslock2:=""
+return
+
+<+F7::
+try
+    runFunc(keyset.caps_lshift_f7)
+Capslock2:=""
+return
+
+<+F8::
+try
+    runFunc(keyset.caps_lshift_f8)
+Capslock2:=""
+return
+
+<+F9::
+try
+    runFunc(keyset.caps_lshift_f9)
+Capslock2:=""
+return
+
+<+F10::
+try
+    runFunc(keyset.caps_lshift_f10)
+Capslock2:=""
+return
+
+<+F11::
+try
+    runFunc(keyset.caps_lshift_f11)
+Capslock2:=""
+return
+
+<+F12::
+try
+    runFunc(keyset.caps_lshift_f12)
+Capslock2:=""
+return
 
 
 

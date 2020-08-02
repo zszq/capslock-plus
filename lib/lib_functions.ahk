@@ -364,3 +364,34 @@ SystemCursor(OnOff:=1)   ; 初始化 = "I","Init"; 隐藏 = 0,"Off"; 切换 = -1
         DllCall( "SetSystemCursor", "Ptr",h_cursor, "UInt",c%A_Index% )
     }
 }
+
+; 功能: 切换选中文字大小写
+; 参数: Mode - 可以为 L (小写)、U (大写)、T (首字母大写)
+;~ 兼容autohotkey 2.0
+SwitchSelCase(Mode) {
+	clipBak := ClipboardAll ; 备份剪贴板
+	Clipboard := "" ; 清空剪贴板
+
+	SendInput, ^{insert}
+    ClipWait, 0.1
+    if (ErrorLevel)
+    {
+        SendInput,^{left}^+{right}^{insert}
+        ClipWait, 0.1
+    }
+	
+    if(!ErrorLevel)
+    {
+        selText := Clipboard
+
+        if (selText != "") {
+            Clipboard := ""
+            Clipboard := Format("{:" Mode "}", selText)
+            ClipWait, 1
+            Send, ^v
+            Sleep, 500 ; 防止没有粘贴完毕剪贴板就被恢复了
+        }
+    }
+
+	Clipboard := clipBak ; 恢复剪贴板
+}

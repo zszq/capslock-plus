@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>热键布局说明</title>
+    </head>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            /*font-family:"comic sans ms";*/
+        }
+        .layout {
+            width: 1200px;
+        	padding: 15px 10px;
+        	background-color: #ccc;
+        	border-radius: 10px;
+        	margin: 50px auto;
+        }
+        .layout .row {
+        	display: flex;
+        	justify-content: space-between;
+        }
+        .layout .row span {
+        	font-size: 12px;
+        	color: #00b050;
+        }
+        .layout .title {
+        	margin-bottom: 15px;
+        	text-align: center;
+        	color: #0080c0;
+        	font-size: 18px;
+        	font-weight: bold;
+        }
+        button{
+            width: 85px;
+            min-height: 55px;
+            background-color: white;
+            font-size: 14px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 2px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            cursor: pointer;
+        }
+        button:hover{
+          box-shadow: 0px 0px 4px 1px rgba(79, 239, 239, 61),0px 0px 4px 0px rgba(0, 255, 255, 61);
+          transform: scale(1.03);
+        }
+    </style>
+    <body>
+        <div class="layout">
+        	<div class="title">CapsLock+Key</div>
+        	<!-- 第1排 -->
+        	<div class="row" style="margin-bottom: 10px;">
+        		<button style="margin-right: 30px;">Esc</button>
+            	<button>f1 <br> <span>打开说明文档</span></button>
+                <button>f2 <br> <span>弹出计算面板</span></button>
+                <button>f3 <br> <span>开关窗口前置</span></button>
+                <button style="margin-right: 30px;">f4 <br> <span>开关窗口透明</span></button>
+            	<button>f5 <br> <span>重启软件</span></button>
+                <button>f6 <br> <span></span></button>
+                <button>f7 <br> <span></span></button>
+                <button style="margin-right: 30px;">f8 <br> <span>关闭/打开独立剪贴板功能</span></button>
+            	<button>f9 <br> <span>获取转义后的选中的字符</span></button>
+                <button>f10 <br> <span></span></button>
+                <button>f11 <br> <span></span></button>
+                <button>f12 <br> <span></span></button>
+        	</div>
+            <!-- 第2排 -->
+            <div class="row">
+            	<button>` <br> <span>激活绑定窗口</span></button>
+                <button>1 <br> <span>激活绑定窗口</span></button>
+                <button>2 <br> <span>激活绑定窗口</span></button>
+                <button>3 <br> <span>激活绑定窗口</span></button>
+                <button>4 <br> <span>激活绑定窗口</span></button>
+                <button>5 <br> <span>激活绑定窗口</span></button>
+                <button>6 <br> <span>激活绑定窗口</span></button>
+                <button>7 <br> <span>激活绑定窗口</span></button>
+                <button>8 <br> <span>激活绑定窗口</span></button>
+                <button>9 <br> <span>( ) 围起文本</span></button>
+                <button>0 <br> <span></span></button>
+                <button>- <br> <span>PgUp上一页</span></button>
+                <button>+ <br> <span>PgDn下一页</span></button>
+                <button style="width: 135px;">Backspace <br> <span>删除当前行</span></button>
+            </div>
+            <!-- 第3排 -->
+            <div class="row">
+            	<button style="width: 100px;">Tab <br> <span>热字符串(需自己设置)</span></button>
+                <button>Q <br> <span>开关qbar功能</span></button>
+                <button>W <br> <span>ctrl+w关闭标签</span></button>
+                <button>E <br> <span>ctrl+shift+tab切换到前标签</span></button>
+                <button>R <br> <span>ctrl+tab切换到后标签</span></button>
+                <button>T <br> <span>有道翻译选中文字</span></button>
+                <button>Y <br> <span>ctrl+y恢复</span></button>
+                <button>U <br> <span>home行首</span></button>
+                <button>I <br> <span>方向键 上</span></button>
+                <button>O <br> <span>end行末</span></button>
+                <button>P <br> <span>esc键</span></button>
+                <button>[ <br> <span>{ } 围起文本</span></button>
+                <button>] <br> <span>[ ] 围起文本</span></button>
+                <button>\ <br> <span></span></button>
+            </div>
+            <!-- 第4排 -->
+            <div class="row">
+            	<button style="width: 120px;">CapsLock <br> <span></span></button>
+                <button>A <br> <span>backspace前删除</span></button>
+                <button>S <br> <span>delete后删除</span></button>
+                <button>D <br> <span>ctrl+s保存</span></button>
+                <button>F <br> <span>ctrl+f搜索</span></button>
+                <button>G <br> <span>google翻译选中文字</span></button>
+                <button>H <br> <span>ctrl+left左跳词</span></button>
+                <button>J <br> <span>方向键 左</span></button>
+                <button>K <br> <span>方向键 下</span></button>
+                <button>L <br> <span>方向键 右</span></button>
+                <button>; <br> <span>ctrl+right右跳词</span></button>
+                <button>' <br> <span>" " 围起文本</span></button>
+                <button style="width:145px;">Enter <br> <span>直接向下新开一行</span></button>
+            </div>
+            <!-- 第5排 -->
+            <div class="row">
+            	<button style="width: 170px;">Shift <br> <span></span></button>
+                <button>Z <br> <span>ctrl+z撤销</span></button>
+                <button>X <br> <span>ctrl+x剪切</span></button>
+                <button>C <br> <span>ctrl+c复制</span></button>
+                <button>V <br> <span>ctrl+v粘贴</span></button>
+                <button>B <br> <span>win+v打开剪切板</span></button>
+                <button>N <br> <span>复制到上一行</span></button>
+                <button>M <br> <span>复制到下一行</span></button>
+                <button>, <br> <span>< > 围起文本</span></button>
+                <button>. <br> <span></span></button>
+                <button>/ <br> <span>ctrl+/ 代码注释</span></button>
+                <button style="width:170px;">Shift <br> <span></span></button>
+            </div>
+            <!-- 第6排 -->
+            <div class="row">
+            	<button style="width: 120px;">Ctrl <br> <span></span></button>
+                <button>Window <br> <span></span></button>
+                <button>Alt <br> <span></span></button>
+                <button style="width: 480px;">Spance <br> <span></span></button>
+                <button>Alt <br> <span></span></button>
+                <button>Fn <br> <span></span></button>
+                <button style=" width: 103px;">Command <br> <span></span></button>
+                <button style="width: 120px;">Ctrl <br> <span></span></button>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="layout">
+        	<div class="title">CapsLock+Alt+Key</div>
+        	<!-- 第1排 -->
+        	<div class="row" style="margin-bottom: 10px;">
+        		<button style="margin-right: 30px;">Esc</button>
+            	<button>f1 <br> <span></span></button>
+                <button>f2 <br> <span></span></button>
+                <button>f3 <br> <span></span></button>
+                <button style="margin-right: 30px;">f4 <br> <span></span></button>
+            	<button>f5 <br> <span></span></button>
+                <button>f6 <br> <span></span></button>
+                <button>f7 <br> <span></span></button>
+                <button style="margin-right: 30px;">f8 <br> <span></span></button>
+            	<button>f9 <br> <span></span></button>
+                <button>f10 <br> <span></span></button>
+                <button>f11 <br> <span></span></button>
+                <button>f12 <br> <span></span></button>
+        	</div>
+            <!-- 第2排 -->
+            <div class="row">
+            	<button>` <br> <span>绑定窗口</span></button>
+                <button>1 <br> <span>绑定窗口</span></button>
+                <button>2 <br> <span>绑定窗口</span></button>
+                <button>3 <br> <span>绑定窗口</span></button>
+                <button>4 <br> <span>绑定窗口</span></button>
+                <button>5 <br> <span>绑定窗口</span></button>
+                <button>6 <br> <span>绑定窗口</span></button>
+                <button>7 <br> <span>绑定窗口</span></button>
+                <button>8 <br> <span>绑定窗口</span></button>
+                <button>9 <br> <span></span></button>
+                <button>0 <br> <span></span></button>
+                <button>- <br> <span>光标跳至页首</span></button>
+                <button>+ <br> <span>光标跳至页尾</span></button>
+                <button style="width: 135px;">Backspace <br> <span>删除全部内容</span></button>
+            </div>
+            <!-- 第3排 -->
+            <div class="row">
+            	<button style="width: 100px;">Tab <br> <span></span></button>
+                <button>Q <br> <span></span></button>
+                <button>W <br> <span>alt+f4关闭软件</span></button>
+                <button>E <br> <span></span></button>
+                <button>R <br> <span></span></button>
+                <button>T <br> <span></span></button>
+                <button>Y <br> <span></span></button>
+                <button>U <br> <span>shift+home选择至行首</span></button>
+                <button>I <br> <span>shift+up向上选择</span></button>
+                <button>O <br> <span>shift+end选择至行末</span></button>
+                <button>P <br> <span>选中当前单词</span></button>
+                <button>[ <br> <span></span></button>
+                <button>] <br> <span></span></button>
+                <button>\ <br> <span></span></button>
+            </div>
+            <!-- 第4排 -->
+            <div class="row">
+            	<button style="width: 120px;">CapsLock <br> <span></span></button>
+                <button>A <br> <span>ctrl+backspace左单词删除</span></button>
+                <button>S <br> <span>ctrl+delete右单词删除</span></button>
+                <button>D <br> <span></span></button>
+                <button>F <br> <span></span></button>
+                <button>G <br> <span></span></button>
+                <button>H <br> <span>ctrl+shift+left左选择单词</span></button>
+                <button>J <br> <span>shift+left向左选择</span></button>
+                <button>K <br> <span>shift+down向下选择</span></button>
+                <button>L <br> <span>shift+right向右选择</span></button>
+                <button>; <br> <span>ctrl+shift+right右选择单词</span></button>
+                <button>' <br> <span></span></button>
+                <button style="width:145px;">Enter <br> <span>直接向上新开一行</span></button>
+            </div>
+            <!-- 第5排 -->
+            <div class="row">
+            	<button style="width: 170px;">Shift <br> <span></span></button>
+                <button>Z <br> <span></span></button>
+                <button>X <br> <span>ctrl+x剪切2</span></button>
+                <button>C <br> <span>ctrl+c复制2</span></button>
+                <button>V <br> <span>ctrl+v粘贴2</span></button>
+                <button>B <br> <span>弹出所有u盘</span></button>
+                <button>N <br> <span>选中英文转大写</span></button>
+                <button>M <br> <span>选中英文转小写</span></button>
+                <button>, <br> <span></span></button>
+                <button>. <br> <span></span></button>
+                <button>/ <br> <span></span></button>
+                <button style="width:170px;">Shift <br> <span></span></button>
+            </div>
+            <!-- 第6排 -->
+            <div class="row">
+            	<button style="width: 120px;">Ctrl <br> <span></span></button>
+                <button>Window <br> <span></span></button>
+                <button>Alt <br> <span></span></button>
+                <button style="width: 480px;">Spance <br> <span></span></button>
+                <button>Alt <br> <span></span></button>
+                <button>Fn <br> <span></span></button>
+                <button style=" width: 103px;">Command <br> <span></span></button>
+                <button style="width: 120px;">Ctrl <br> <span></span></button>
+            </div>
+        </div>
+
+
+
+
+        <div class="layout">
+        	<div class="title">CapsLock+Shift+Key</div>
+        	<!-- 第1排 -->
+        	<div class="row" style="margin-bottom: 10px;">
+        		<button style="margin-right: 30px;">Esc</button>
+            	<button>f1 <br> <span></span></button>
+                <button>f2 <br> <span></span></button>
+                <button>f3 <br> <span></span></button>
+                <button style="margin-right: 30px;">f4 <br> <span></span></button>
+            	<button>f5 <br> <span></span></button>
+                <button>f6 <br> <span></span></button>
+                <button>f7 <br> <span></span></button>
+                <button style="margin-right: 30px;">f8 <br> <span></span></button>
+            	<button>f9 <br> <span></span></button>
+                <button>f10 <br> <span></span></button>
+                <button>f11 <br> <span></span></button>
+                <button>f12 <br> <span></span></button>
+        	</div>
+            <!-- 第2排 -->
+            <div class="row">
+            	<button>` <br> <span></span></button>
+                <button>1 <br> <span></span></button>
+                <button>2 <br> <span></span></button>
+                <button>3 <br> <span></span></button>
+                <button>4 <br> <span></span></button>
+                <button>5 <br> <span></span></button>
+                <button>6 <br> <span></span></button>
+                <button>7 <br> <span></span></button>
+                <button>8 <br> <span></span></button>
+                <button>9 <br> <span></span></button>
+                <button>0 <br> <span></span></button>
+                <button>- <br> <span></span></button>
+                <button>+ <br> <span></span></button>
+                <button style="width: 135px;">Backspace <br> <span></span></button>
+            </div>
+            <!-- 第3排 -->
+            <div class="row">
+            	<button style="width: 100px;">Tab <br> <span></span></button>
+                <button>Q <br> <span></span></button>
+                <button>W <br> <span></span></button>
+                <button>E <br> <span></span></button>
+                <button>R <br> <span></span></button>
+                <button>T <br> <span></span></button>
+                <button>Y <br> <span></span></button>
+                <button>U <br> <span></span></button>
+                <button>I <br> <span></span></button>
+                <button>O <br> <span></span></button>
+                <button>P <br> <span></span></button>
+                <button>[ <br> <span></span></button>
+                <button>] <br> <span></span></button>
+                <button>\ <br> <span></span></button>
+            </div>
+            <!-- 第4排 -->
+            <div class="row">
+            	<button style="width: 120px;">CapsLock <br> <span></span></button>
+                <button>A <br> <span>删除光标左边至行首</span></button>
+                <button>S <br> <span>删除光标右边至行末</span></button>
+                <button>D <br> <span></span></button>
+                <button>F <br> <span></span></button>
+                <button>G <br> <span></span></button>
+                <button>H <br> <span>ctrl+win+f4关闭当前桌面</span></button>
+                <button>J <br> <span>ctrl+win+left上个虚拟桌面</span></button>
+                <button>K <br> <span>ctrl+win+d新建虚拟桌面</span></button>
+                <button>L <br> <span>ctrl+win+right下个虚拟桌面</span></button>
+                <button>; <br> <span></span></button>
+                <button>' <br> <span></span></button>
+                <button style="width:145px;">Enter <br> <span></span></button>
+            </div>
+            <!-- 第5排 -->
+            <div class="row">
+            	<button style="width: 170px;">Shift <br> <span></span></button>
+                <button>Z <br> <span></span></button>
+                <button>X <br> <span></span></button>
+                <button>C <br> <span></span></button>
+                <button>V <br> <span></span></button>
+                <button>B <br> <span></span></button>
+                <button>N <br> <span></span></button>
+                <button>M <br> <span></span></button>
+                <button>, <br> <span></span></button>
+                <button>. <br> <span></span></button>
+                <button>/ <br> <span></span></button>
+                <button style="width:170px;">Shift <br> <span></span></button>
+            </div>
+            <!-- 第6排 -->
+            <div class="row">
+            	<button style="width: 120px;">Ctrl <br> <span></span></button>
+                <button>Window <br> <span></span></button>
+                <button>Alt <br> <span></span></button>
+                <button style="width: 480px;">Spance <br> <span></span></button>
+                <button>Alt <br> <span></span></button>
+                <button>Fn <br> <span></span></button>
+                <button style=" width: 103px;">Command <br> <span></span></button>
+                <button style="width: 120px;">Ctrl <br> <span></span></button>
+            </div>
+        </div>
+    </body>
+</html>
