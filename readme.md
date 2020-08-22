@@ -22,7 +22,9 @@
 
 
 
-**以下内容引用CapsLockPlus作者的介绍页面，只作简要说明。**更多详情请查看 [原文档](https://capslox.com/capslock-plus/)
+
+
+以下内容引用CapsLockPlus作者的介绍页面，只作简要说明。更多详情请查看 [原文档](https://capslox.com/capslock-plus/)
 
 ## 概述 ##
 
@@ -74,7 +76,7 @@ DAAS                | <font color="#dd0000">✘</font>     | <font color="#00dd0
 #### 2. Caps + Alt + Key
 >以下省略了CapsLock + Alt键，默认是要加上的，未设置功能键的可自行设置。
 
-![ddqbJU.png](https://s1.ax1x.com/2020/08/23/ddqbJU.png)](https://sbimg.cn/image/3FdLK)
+![ddqbJU.png](https://s1.ax1x.com/2020/08/23/ddqbJU.png)
 
 **2.1 CapsLock + Alt + 鼠标**（临时改变鼠标速度，并在松开后复原，默认是3，范围是1~20。）
 
