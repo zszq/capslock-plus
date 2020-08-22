@@ -14,10 +14,10 @@ if not (A_IsAdmin or RegExMatch(full_command_line, " /restart(?!\S)"))
     ExitApp
 }
 
-IfExist, capslock+icon.ico
+IfExist, capslock+rise.ico
 {
 ;freezing icon
-menu, TRAY, Icon, capslock+icon.ico, , 1
+menu, TRAY, Icon, capslock+rise.ico, , 1
 }
 Menu, Tray, Icon,,, 1
 
