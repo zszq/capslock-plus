@@ -59,7 +59,7 @@ DAAS                | <font color="#dd0000">✘</font>     | <font color="#00dd0
 #### 1. Caps + Key ####
 >以下省略了CapsLock键，默认是要加上的，未设置功能键的可自行设置。
 
-![3Fc2I.png](https://wx1.sbimg.cn/2020/08/23/3Fc2I.png)
+![ddqToV.png](https://s1.ax1x.com/2020/08/23/ddqToV.png)
 
 **1.1 CapsLock + 鼠标**
 
@@ -74,7 +74,7 @@ DAAS                | <font color="#dd0000">✘</font>     | <font color="#00dd0
 #### 2. Caps + Alt + Key
 >以下省略了CapsLock + Alt键，默认是要加上的，未设置功能键的可自行设置。
 
-[![3FdLK.png](https://wx2.sbimg.cn/2020/08/23/3FdLK.png)](https://sbimg.cn/image/3FdLK)
+![ddqbJU.png](https://s1.ax1x.com/2020/08/23/ddqbJU.png)](https://sbimg.cn/image/3FdLK)
 
 **2.1 CapsLock + Alt + 鼠标**（临时改变鼠标速度，并在松开后复原，默认是3，范围是1~20。）
 
@@ -89,7 +89,7 @@ DAAS                | <font color="#dd0000">✘</font>     | <font color="#00dd0
 #### 3. Caps + Shift + Key
 >以下省略了CapsLock + Shift键，默认是要加上的，未设置功能键的可自行设置。
 
-![3FsMT.png](https://wx1.sbimg.cn/2020/08/23/3FsMT.png)
+![ddqLz4.png](https://s1.ax1x.com/2020/08/23/ddqLz4.png)
 
 **3.1 CapsLock + Shift + 鼠标**
 
