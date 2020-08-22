@@ -77,7 +77,9 @@ Process Priority,,High
 start:
 
 ;-----------------START-----------------
-global ctrlZ, CapsLock2, CapsLock
+global ctrlZ, CapsLock2, CapsLock, CapsLockOpen
+
+CapsLockOpen:=CLSets.Global.CapslockOpen!=""?CLSets.Global.CapslockOpen:true
 
 Capslock::
 ;ctrlZ:     Capslock+Z undo / redo flag
@@ -93,16 +95,18 @@ KeyWait, Capslock
 CapsLock:="" ;Capslock最优先置空，来关闭 Capslock+ 功能的触发
 if CapsLock2
 {
-    if keyset.press_caps
-    {
-        try
-            runFunc(keyset.press_caps)
-    }
-    else
-    {
+    ; if keyset.press_caps
+    ; {
+    ;     try
+    ;         runFunc(keyset.press_caps)
+    ; }
+    ; else
+    ; {
+    ;     SetCapsLockState, % GetKeyState("CapsLock","T") ? "Off" : "On"
+    ; }
+    ; ; sendinput, {esc}
+    if (!CapslockOpen)  ; 为了大小写切换默认打开，取反
         SetCapsLockState, % GetKeyState("CapsLock","T") ? "Off" : "On"
-    }
-    ; sendinput, {esc}
 }
 CapsLock2:=""
 
@@ -142,6 +146,18 @@ return
 
 LAlt::return
 
+WheelUp::
+try
+    runFunc(keyset.caps_wheelUp)
+Capslock2:=""
+return
+
+WheelDown::
+try
+    runFunc(keyset.caps_wheelDown)
+Capslock2:=""
+return
+
 <!WheelUp::
 try
     runFunc(keyset.caps_lalt_wheelUp)
@@ -151,6 +167,12 @@ return
 <!WheelDown::
 try
     runFunc(keyset.caps_lalt_wheelDown)
+Capslock2:=""
+return
+
+<+~LButton::
+try
+    runFunc(keyset.caps_shift_leftButton)
 Capslock2:=""
 return
 

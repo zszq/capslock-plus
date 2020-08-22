@@ -684,9 +684,9 @@ keySchemeInit_capslockPlusMix(){
     if(!keyset.caps_f5)
         keyset.caps_f5:="keyFunc_reload"
     if(!keyset.caps_f6)
-        keyset.caps_f6:="keyFunc_doNothing"
+        keyset.caps_f6:="keyFunc_capsLockAutoStart"
     if(!keyset.caps_f7)
-        keyset.caps_f7:="keyFunc_doNothing"
+        keyset.caps_f7:="keyFunc_capsLockOpen"
     if(!keyset.caps_f8)
         keyset.caps_f8:="keyFunc_switchClipboard"
     if(!keyset.caps_f9)
@@ -817,21 +817,21 @@ keySchemeInit_capslockPlusMix(){
     if(!keyset.caps_lshift_d)
         keyset.caps_lshift_d:="keyFunc_doNothing"
     if(!keyset.caps_lshift_e)
-        keyset.caps_lshift_e:="keyFunc_doNothing"
+        keyset.caps_lshift_e:="keyFunc_CreateVirtualPanel"
     if(!keyset.caps_lshift_f)
         keyset.caps_lshift_f:="keyFunc_doNothing"
     if(!keyset.caps_lshift_g)
         keyset.caps_lshift_g:="keyFunc_doNothing"
     if(!keyset.caps_lshift_h)
-        keyset.caps_lshift_h:="keyFunc_CloseVirtualPanel"
+        keyset.caps_lshift_h:="keyFunc_doNothing"
     if(!keyset.caps_lshift_i)
         keyset.caps_lshift_i:="keyFunc_doNothing"
     if(!keyset.caps_lshift_j)
-        keyset.caps_lshift_j:="keyFunc_ChangeLastVirtualPanel"
+        keyset.caps_lshift_j:="keyFunc_doNothing"
     if(!keyset.caps_lshift_k)
-        keyset.caps_lshift_k:="keyFunc_CreateVirtualPanel"
+        keyset.caps_lshift_k:="keyFunc_doNothing"
     if(!keyset.caps_lshift_l)
-        keyset.caps_lshift_l:="keyFunc_ChangeNextVirtualPanel"
+        keyset.caps_lshift_l:="keyFunc_doNothing"
     if(!keyset.caps_lshift_m)
         keyset.caps_lshift_m:="keyFunc_doNothing"
     if(!keyset.caps_lshift_n)
@@ -841,9 +841,9 @@ keySchemeInit_capslockPlusMix(){
     if(!keyset.caps_lshift_p)
         keyset.caps_lshift_p:="keyFunc_doNothing"
     if(!keyset.caps_lshift_q)
-        keyset.caps_lshift_q:="keyFunc_doNothing"
+        keyset.caps_lshift_q:="keyFunc_ChangeLastVirtualPanel"
     if(!keyset.caps_lshift_r)
-        keyset.caps_lshift_r:="keyFunc_doNothing"
+        keyset.caps_lshift_r:="keyFunc_CloseVirtualPanel"
     if(!keyset.caps_lshift_s)
         keyset.caps_lshift_s:="keyFunc_deleteToLineEnd"
     if(!keyset.caps_lshift_t)
@@ -853,7 +853,7 @@ keySchemeInit_capslockPlusMix(){
     if(!keyset.caps_lshift_v)
         keyset.caps_lshift_v:="keyFunc_doNothing"
     if(!keyset.caps_lshift_w)
-        keyset.caps_lshift_w:="keyFunc_doNothing"
+        keyset.caps_lshift_w:="keyFunc_ChangeNextVirtualPanel"
     if(!keyset.caps_lshift_x)
         keyset.caps_lshift_x:="keyFunc_doNothing"
     if(!keyset.caps_lshift_y)
@@ -915,13 +915,20 @@ keySchemeInit_capslockPlusMix(){
         keyset.caps_lshift_ralt:="keyFunc_doNothing"
 
 
-
     ;--------------------other--------------------
-        
+
+    if(!keyset.caps_wheelUp)
+        keyset.caps_wheelUp:="keyFunc_volumeUp"
+    if(!keyset.caps_wheelDown)
+        keyset.caps_wheelDown:="keyFunc_volumeDown"
+
     if(!keyset.caps_lalt_wheelUp)
         keyset.caps_lalt_wheelUp:="keyFunc_mouseSpeedIncrease"
     if(!keyset.caps_lalt_wheelDown)
         keyset.caps_lalt_wheelDown:="keyFunc_mouseSpeedDecrease"
+
+    if(!keyset.caps_shift_leftButton)
+        keyset.caps_shift_leftButton:="keyFunc_putTheWindowToRightScreen"
 
 
 

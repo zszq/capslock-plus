@@ -1020,6 +1020,56 @@ keyFunc_enterUpWherever(){
     Return
 }
 
+; CapsLock大小写切换开关
+keyFunc_capsLockOpen(){
+    global
+    if(CapslockOpen)
+    {
+        ; 已开启，则关闭
+        SetCapsLockState, Off
+        CapslockOpen:=false
+        setSettings("Global","CapslockOpen",CapslockOpen)
+        showMsg("CapsLock On", 1000) ; 为了启动默认打开，if (!CapslockOpen)取反，提示信息取反
+    }
+    else
+    {
+        ; 已关闭，则打开
+        SetCapsLockState, On
+        SetCapsLockState, Off
+        CapslockOpen:=true
+        setSettings("Global","CapslockOpen",CapslockOpen)
+        showMsg("CapsLock Off", 1000) ; 为了启动默认打开，if (!CapslockOpen)取反，提示信息取反
+    }
+    return
+}
+
+; CapsLock热键开机自启开关
+keyFunc_capsLockAutoStart(){
+    if(CLsets.global.autostart)
+    {
+        ; 已开启，则关闭
+        setSettings("Global","autostart",0)
+        showMsg("autostart Off", 1000)
+    }
+    else
+    {
+        ; 已关闭，则打开
+        setSettings("Global","autostart",1)
+        showMsg("autostart On", 1000)
+    }
+    return
+}
+
+; 将窗口移至当前显示器左侧的显示器
+keyFunc_putTheWindowToLeftScreen(){
+    SendInput, +#{Left}
+}
+
+; 将窗口移至当前显示器右侧的显示器
+keyFunc_putTheWindowToRightScreen(){
+    SendInput, +#{Right}
+}
+
 ; 弹出U盘
 keyFunc_drivePop(){
     DriveGet, list, list
