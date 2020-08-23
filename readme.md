@@ -1,18 +1,18 @@
 
 ## 前言 ##
-​		&nbsp;&nbsp;&nbsp;&nbsp;**CapsLockHotkey** 是参考CapsLock+[（CapsLock+版本）](https://github.com/wo52616111/capslock-plus)和CapsLockPlus（CapsLock+修改版）[（CapsLockPlus版本）](https://github.com/PatrickShieh/CapsLockPlus)再次修改，在两位作者的布局和功能基础上尽量保持原布局和功能的同时进行了优化，以适合自己日常使用。如果是经常用键盘输入文字（如程序员），相信你在半天时间就能完全上手。
+　　**CapsLockHotkey** 是参考CapsLock+[（CapsLock+版本）](https://github.com/wo52616111/capslock-plus)和CapsLockPlus（CapsLock+修改版）[（CapsLockPlus版本）](https://github.com/PatrickShieh/CapsLockPlus)再次修改，在两位作者的布局和功能基础上尽量保持原布局和功能的同时进行了优化，以适合自己日常使用。如果是经常用键盘输入文字（如程序员），相信你在半天时间就能完全上手。
 
-​		&nbsp;&nbsp;&nbsp;&nbsp;感谢CapsLock+开源这款工具， 2020-04-25作者重新更新了，但是新的布局很不友好，交流了一下，作者说有时间了会继续优化，可以关注并打赏原作者[（开源作者）](https://github.com/wo52616111/capslock-plus)。
+　　感谢CapsLock+开源这款工具， 2020-04-25作者重新更新了，但是新的布局很不友好，交流了一下，作者说有时间了会继续优化，可以关注并打赏原作者[（开源作者）](https://github.com/wo52616111/capslock-plus)。
 
-​		&nbsp;&nbsp;&nbsp;&nbsp;如CapsLockPlus作者所说：本人是个键盘党，还是个程序猿，非常不喜欢敲代码敲得嗨时，还要去碰鼠标、右手移动一段距离去操作方向键，删除键等等。噢，对了，还很讨厌Ctrl键，因为使用Ctrl组合键时，左手要离开键盘一段距离，神烦。试想下，双手不用离开字母区，是不是很爽，嘿嘿。
-
-
-
-CapsLockHotkey：[下载地址](https://github.com/zszq/CapsLockHotkey/releases)
+　　如CapsLockPlus作者所说：本人是个键盘党，还是个程序猿，非常不喜欢敲代码敲得嗨时，还要去碰鼠标、右手移动一段距离去操作方向键，删除键等等。噢，对了，还很讨厌Ctrl键，因为使用Ctrl组合键时，左手要离开键盘一段距离，神烦。试想下，双手不用离开字母区，是不是很爽，嘿嘿。
 
 <br><br>
 
+CapsLockHotkey：[下载地址](https://github.com/zszq/CapsLockHotkey/releases)
 
+<br>
+
+<br>
 
 #### 已知可能会出现的问题：
 
@@ -20,9 +20,7 @@ CapsLockHotkey：[下载地址](https://github.com/zszq/CapsLockHotkey/releases)
 2. ctrl + v 进行粘贴时会出现 ctrl不起作用，只有v键起作用了。 解决方法：删除 v键输出的内容重新粘贴，或者用软件带的 capslock + v 进行粘贴，或者capslock + f8关闭自带复制粘贴功能。
 3. 其他问题请查看 [原文档](https://capslox.com/capslock-plus/#使用)
 
-
-
-
+<br><br>
 
 以下内容引用CapsLockPlus作者的介绍页面，只作简要说明。更多详情请查看 [原文档](https://capslox.com/capslock-plus/)
 
@@ -103,7 +101,7 @@ DAAS                | <font color="#dd0000">✘</font>     | <font color="#00dd0
 鼠标滚轮向前|✘
 鼠标滚轮向后|✘
 
-
+<br><br>
 
 > 以下功能只作简要说明，除 **WinBind** 有变动外，其他详细说明参考 [原文档](https://capslox.com/capslock-plus/#advancedFunctions)
 
