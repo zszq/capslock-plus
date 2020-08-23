@@ -1,23 +1,21 @@
 
 ## 前言 ##
-​		**capslock-plus-rise** 是根据CapsLock+[（作者版本）](https://github.com/wo52616111/capslock-plus)和CapsLockPlus（CapsLock+修改版）[（CapsLockPlus版本）](https://github.com/PatrickShieh/CapsLockPlus)再次修改，在两位作者的布局和功能基础上尽量保持原布局和功能的同时进行了优化，以适合自己日常使用。如果是经常用键盘输入文字（如程序员），相信你在半天时间就能完全上手。
+​		&nbsp;&nbsp;**CapsLockHotkey** 是参考CapsLock+[（CapsLock+版本）](https://github.com/wo52616111/capslock-plus)和CapsLockPlus（CapsLock+修改版）[（CapsLockPlus版本）](https://github.com/PatrickShieh/CapsLockPlus)再次修改，在两位作者的布局和功能基础上尽量保持原布局和功能的同时进行了优化，以适合自己日常使用。如果是经常用键盘输入文字（如程序员），相信你在半天时间就能完全上手。
 
-​		感谢CapsLock+开源这款工具， 2020-04-25作者重新更新了，但是新的布局很不友好，交流了一下，作者说有时间了会继续优化，可以关注并打赏原作者[（开源作者）](https://github.com/wo52616111/capslock-plus)。
+​		&nbsp;&nbsp;感谢CapsLock+开源这款工具， 2020-04-25作者重新更新了，但是新的布局很不友好，交流了一下，作者说有时间了会继续优化，可以关注并打赏原作者[（开源作者）](https://github.com/wo52616111/capslock-plus)。
 
-​		如CapsLockPlus作者所说：本人是个键盘党，还是个程序猿，非常不喜欢敲代码敲得嗨时，还要去碰鼠标、右手移动一段距离去操作方向键，删除键等等。噢，对了，还很讨厌Ctrl键，因为使用Ctrl组合键时，左手要离开键盘一段距离，神烦。试想下，双手不用离开字母区，是不是很爽，嘿嘿。
-
-
-
->capslock+rise：[下载地址](https://github.com/zszq/capslock-plus-rise/releases/tag/1.0.0)
+​		&nbsp;&nbsp;如CapsLockPlus作者所说：本人是个键盘党，还是个程序猿，非常不喜欢敲代码敲得嗨时，还要去碰鼠标、右手移动一段距离去操作方向键，删除键等等。噢，对了，还很讨厌Ctrl键，因为使用Ctrl组合键时，左手要离开键盘一段距离，神烦。试想下，双手不用离开字母区，是不是很爽，嘿嘿。<br>
 
 
+
+CapsLockHotkey：[下载地址](https://github.com/zszq/CapsLockHotkey/releases)<br>
 
 
 
 #### 已知可能会出现的问题：
 
 1. **启动之后不报错按键没有任何反应，请查看360等安全软件是否拦截了模拟按键，并加入白名单！！！**
-2. ctrl + v 进行粘贴时会出现 ctrl不起作用，只有v键起作用了。 解决方法：删除 v键输出的内容重新粘贴，或者用软件带的 capslock + v 进行粘贴。
+2. ctrl + v 进行粘贴时会出现 ctrl不起作用，只有v键起作用了。 解决方法：删除 v键输出的内容重新粘贴，或者用软件带的 capslock + v 进行粘贴，或者capslock + f8关闭自带复制粘贴功能。
 3. 其他问题请查看 [原文档](https://capslox.com/capslock-plus/#使用)
 
 
@@ -40,7 +38,7 @@ CapslockPlus是一个加强 Capslock 键的功能，以提高效率的工具。�
 
 >CapsLock按键省略为Caps，Key为各种按键，下面对比的是大功能模块，小功能到原作者文档查看。
 
-功能| CapsLock+（原版） | CapsLockPlus（修改版） | CapsLock+rise（自用版） 
+功能| CapsLock+（原版） | CapsLockPlus（修改版） | CapsLockHotkey（自用版） 
 :-:                 | :-:   | :-: |:-:                 
 Caps + Key          | <font color="#00dd00">✔</font>     | <font color="#00dd00">✔</font>     | <font color="#00dd00">✔</font> 
 Caps + Alt + Key    | <font color="#00dd00">✔</font>     | <font color="#00dd00">✔</font>     | <font color="#00dd00">✔</font> 
