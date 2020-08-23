@@ -15,8 +15,9 @@ CapsLockHotkey：[下载地址](https://github.com/zszq/CapsLockHotkey/releases)
 #### 已知可能会出现的问题：
 
 1. **启动之后不报错按键没有任何反应，请查看360等安全软件是否拦截了模拟按键，并加入白名单！！！**
-2. ctrl + v 进行粘贴时会出现 ctrl不起作用，只有v键起作用了。 解决方法：删除 v键输出的内容重新粘贴，或者用软件带的 capslock + v 进行粘贴，或者capslock + f8关闭自带复制粘贴功能。
-3. 其他问题请查看 [原文档](https://capslox.com/capslock-plus/#使用)
+2. `ctrl + v` 进行粘贴时会出现 ctrl不起作用，只有v键起作用了。 解决方法：删除 v键输出的内容重新粘贴，或者用软件自带的 `capslock + v` 进行粘贴，或者`capslock + f8`关闭软件自带复制粘贴功能。
+3. 通过`Ctrl+Alt+Capslock`快捷键启动 CapsLockHotkey，在桌面使用快捷键不起作用。解决方法：请激活任意软件后使用快捷键启动，或者双击软件启动。如果已经在桌面按了快捷键，在激活软件情况下还是没反应，请先切换下capslock键再重新尝试。如果在桌面使用快捷键造成切换大小写相反，请再次在桌面使用`Ctrl+Alt+Capslock`快捷键操作一次。（此bug待作者修复，推荐将其固定到开始菜单，通过点击启动。）
+4. 其他问题请查看 [原文档](https://capslox.com/capslock-plus/#使用)
 
 <br>
 

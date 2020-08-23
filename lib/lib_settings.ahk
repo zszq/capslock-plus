@@ -288,7 +288,7 @@ return isChange
 globalSettings:
 ;  scriptNameNoSuffix:=RegExReplace(A_ScriptName , "i)(\.ahk|\.exe)$")
 ;----------auto start-------------
-autostartLnk:=A_StartupCommon . "\CapsLock+.lnk"
+autostartLnk:=A_StartupCommon . "\CapsLockHotkey.lnk"
 if(CLsets.global.autostart) ;如果开启开机自启动
 {
     IfExist, % autostartLnk
@@ -315,18 +315,18 @@ if(CLsets.Global.allowClipboard!="0")
 
 return
 
-; 支持ctrl+alt+Capslock启动capslock+
+; 支持ctrl+alt+Capslock启动CapsLockHotkey
 setShortcutKey:
-startMenuLnk:=A_ProgramsCommon . "\CapsLock+.lnk"
+startMenuLnk:=A_ProgramsCommon . "\CapsLockHotkey.lnk"
 IfExist, % startMenuLnk
 {
     FileGetShortcut, %startMenuLnk%, lnkTarget
     if(lnkTarget!=A_ScriptFullPath)
-        FileCreateShortcut, %A_ScriptFullPath%, %startMenuLnk%, %A_WorkingDir%, , , , Capslock
+        FileCreateShortcut, %A_ScriptFullPath%, %startMenuLnk%, %A_WorkingDir%, , , , CapsLock
 }
 else
 {
-    FileCreateShortcut, %A_ScriptFullPath%, %startMenuLnk%, %A_WorkingDir%, , , , Capslock
+    FileCreateShortcut, %A_ScriptFullPath%, %startMenuLnk%, %A_WorkingDir%, , , , CapsLock
 }
 return
 
