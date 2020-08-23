@@ -24,7 +24,7 @@ CapsLockHotkey：[下载地址](https://github.com/zszq/CapsLockHotkey/releases)
 
 ## 概述 ##
 
-CapslockPlus是一个加强 Capslock 键的功能，以提高效率的工具。让你拥有更多的组合键，例如：
+CapsLockHotkey是一个加强 Capslock 键的功能，以提高效率的工具。让你拥有更多的组合键，例如：
 
 - CapsLock + 全键
 - CapsLock + Alt + 全键
@@ -34,19 +34,19 @@ CapslockPlus是一个加强 Capslock 键的功能，以提高效率的工具。�
 
 ## 版本对比 ##
 
->CapsLock按键省略为Caps，Key为各种按键，下面对比的是大功能模块，小功能到原作者文档查看。
+>CapsLock按键省略为Caps，Key为各种按键，下面对比的是大功能模块，小功能到原作者[文档](https://capslox.com/capslock-plus/)查看。
 
 功能| CapsLock+ | CapsLockPlus | CapsLockHotkey 
 :-:                 | :-:   | :-: |:-:                 
 Caps + Key          | <font color="#00dd00">✔</font>     | <font color="#00dd00">✔</font>     | <font color="#00dd00">✔</font> 
 Caps + Alt + Key    | <font color="#00dd00">✔</font>     | <font color="#00dd00">✔</font>     | <font color="#00dd00">✔</font> 
 Caps + Shift + Key  | <font color="#dd0000">✘</font>     | <font color="#00dd00">✔</font>| <font color="#00dd00">✔</font> 
-Caps + Ctrl + Key   | <font color="#dd0000">✘</font>     | <font color="#00dd00">✔</font>| <font color="#dd0000">✘</font>（按键不便不添加） 
+Caps + Ctrl + Key   | <font color="#dd0000">✘</font>     | <font color="#00dd00">✔</font>| <font color="#dd0000">✘</font>（按键不便未添加） 
 TabScript           | TabScript     | TabSnippet| TabScript 
 WinBind             | <font color="#00dd00">✔</font>     | <font color="#00dd00">✔</font>| <font color="#00dd00">✔</font> 
 QBar                | <font color="#00dd00">✔</font>     | <font color="#dd0000">✘</font> | <font color="#00dd00">✔</font>（原作者4月最新版） 
 TransplatePanel     | <font color="#00dd00">✔</font>     | <font color="#00dd00">✔</font>| <font color="#00dd00">✔</font> （增加谷歌翻译国内版） 
-DAAS                | <font color="#dd0000">✘</font>     | <font color="#00dd00">✔</font>| <font color="#dd0000">✘</font>（个人用处不大不添加） 
+DAAS                | <font color="#dd0000">✘</font>     | <font color="#00dd00">✔</font>| <font color="#dd0000">✘</font>（个人用处不大未添加） 
 
 
 
@@ -186,8 +186,4 @@ DAAS                | <font color="#dd0000">✘</font>     | <font color="#00dd0
 
 <br>
 
-参考文档：
-
-[AutoHotkey官方文档](https://www.autohotkey.com/docs/AutoHotkey.htm)
-
-[capslock+文档](https://capslox.com/capslock-plus/)
+参考资料：[AutoHotkey官方文档](https://www.autohotkey.com/docs/AutoHotkey.htm)
