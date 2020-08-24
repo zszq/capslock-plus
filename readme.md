@@ -21,7 +21,7 @@ CapsLockHotkey：[下载地址](https://github.com/zszq/CapsLockHotkey/releases)
 
 <br>
 
-以下内容引用CapsLockPlus作者的介绍页面，只作简要说明。更多详情请查看 [原文档](https://capslox.com/capslock-plus/)
+以下部分内容引用CapsLockPlus作者的介绍页面，只作简要说明。更多详情请查看 [原文档](https://capslox.com/capslock-plus/)
 
 ## 概述 ##
 
@@ -53,7 +53,7 @@ DAAS                | <font color="#dd0000">✘</font>     | <font color="#00dd0
 
 ## 按键说明 ##
 
-如布局图片挂了可查看complete文件夹内图片，或者用浏览器查看文件hotkey_layout.html。
+如布局图片挂了可查看complete文件夹内图片，或者用浏览器查看hotkey_layout.html文件。
 
 #### 1. Caps + Key ####
 >以下省略了CapsLock键，默认是要加上的，未设置功能键的可自行设置。
@@ -75,7 +75,7 @@ DAAS                | <font color="#dd0000">✘</font>     | <font color="#00dd0
 
 ![ddqbJU.png](https://s1.ax1x.com/2020/08/23/ddqbJU.png)
 
-**2.1 CapsLock + Alt + 鼠标**（临时改变鼠标速度，并在松开后复原，默认是3，范围是1~20。）
+**2.1 CapsLock + Alt + 鼠标**（临时改变鼠标速度，并在松开后复原，默认是3，范围是1~20。用于精细化操作，如：截图、取色等）
 
 按键| 功能说明
 :-:| :-:
@@ -178,6 +178,30 @@ DAAS                | <font color="#dd0000">✘</font>     | <font color="#00dd0
 >1. 按下`ESC`键或失去焦点后将关闭界面
 >2. 选中字符再按下`+Q`可以将其填入输入框
 >3. 选中文件再按下`+Q`，它的路径会填入输入框
+>
+>### 命令
+>
+>| 命令                                                         | 功能                                                         | 说明                                                         |
+>| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+>| `cl about`                                                   | 查看版本信息                                                 |                                                              |
+>| `cl set`                                                     | 打开`Capslock+settings.ini`文件和`Capslock+settingsDemo.ini`文件 | `Capslock+settings.ini`各字段作用：`Global`：全局设置`QSearch`：设置搜索命令`QWeb`：设置打开网页`QRun`：设置启动程序`QStyle`：设置`+Q`输入框的样式`TabHotString`：设置`+Tab`热字串*更具体的说明请查看`CapsLock+settingsDemo.ini`文件 |
+>| `ooo -> xxx`                                                 | 在`Capslock+settings.ini`以下的某字段添加一行： `ooo=xxx`如果是搜索网址： `[QSearch]`如果是文件路径： `[QRun]`如果是网址[1]： `[QWeb]`都不是： `[TabHotString]` | 例如输入`mdn -> developer.mozilla.org`，记录完成后就可以在`+Q`输入`mdn`来打开`developer.mozilla.org`如果文件是快捷方式，会自动找到快捷方式所指向的文件的路径来记录如果所记录的字符串格式类似文件路径或者网址[1]，例如`com.com.com`，就会被记录到`QWeb`，要将这类字符串记录到`[TabHotString]`，可以用`->string`命令，它会把字符串记录到`TabHotString`； 同样，`->search`会记录到`QSearch`；`->run`会记录到`QRun`；`->web`会记录到`QWeb`。*更具体的说明请查看`CapsLock+settingsDemo.ini`文件[1]: 只有以`http://`或`https://`或`www.`开头，或者包含`.com`或`.net`或`.org`的字符串才会被认为是网址 |
+>| `ooo ->search xxx``ooo ->run xxx``ooo ->web xxx``ooo ->str xxx` | 在Capslock+settings.ini下的`[QSearch]` / `[QRun]` /`[QWeb]` / `[TabHotString]`字段添加一行： `ooo=xxx` | 记录完成后可以在`+Q`输入`ooo`来搜索 / 打开路径为`xxx`的文件（夹） / 网址 / 使用`+Tab`的热字串功能*更具体的说明请查看`CapsLock+settingsDemo.ini`文件 |
+>| `web xxx`                                                    | 打开xxx网址                                                  | 如果`xxx`以`http://`或`https://`或`www.`开头，或者包含`.com`或`.net`或`.org`，`web`命令可以省略。例如：`google.com` |
+>| `s xxx``bd xxx`                                              | 百度搜索`xxx`                                                | 百度是默认搜索引擎，即可以省略命令直接输入关键词进行搜索，除非关键词中包含其他的命令关键词可以在`Capslock+settings.ini`文件中修改默认搜索引擎，以及修改或添加搜索命令以支持其他搜索引擎。* 更具体的说明请查看`CapsLock+settingsDemo.ini`文件 |
+>| `g xxx``gg xxx`                                              | 谷歌搜索`xxx`                                                |                                                              |
+>| `m xxx`                                                      | MDN搜索`xxx`                                                 |                                                              |
+>| `wk xxx`                                                     | 维基搜索`xxx`                                                |                                                              |
+>| `tb xxx`                                                     | 淘宝搜索`xxx`                                                |                                                              |
+>| `aa bb`                                                      | 用`aa`打开`bb`                                               | `aa`：`[QRun]`上有记录的一个程序`bb`：`[QRun] / [QWeb]`上有记录的一个文件（夹） / 网址简写，或具体的文件（夹）路径 / 网址例如： `[Qrun]`下记录了`ie=C:\Program Files\Internet Explorer\iexplore.exe` `[QWeb]`记录了`clp=http://cjkis.me/capslock+/` 那`ie clp`就可以用`ie`来打开`http://cjkis.me/capslock+/` 也可以直接`ie cjkis.me/capslock+` |
+>| `xxx`                                                        | 如果`[QRun]`或`[QWeb]`内有记录则运行对应文件或打开对应网址如果是文件（夹）路径，打开该文件（夹）如果是网址[1]，打开该网址不是以上情况的话，百度[2] |                                                              |
+>| 能根据输入，展示`[QRun]`和`[QWeb]`的记录，或输入的路径下的文件（夹）[3]可以使用通配符`?`和`*`来匹配任意一个 / 多个字符，例如： `?at`可以匹配 `bat`, `cat`, `fat`... `g*d`可以匹配 `god`, `good`, `gold`...无提示列表的情况下`Tab`展开提示列表（如果`QRun`或`QWeb`有记录的话）有提示列表的情况下，如果有选中某文件名，`Tab`可以将选中的文件名放到输入框，否则，会将第一个文件名放到输入框在展示路径下的文件时，`\`键（或`/`[4]）可以将文件（夹）名填入输入框，`Capslock+-`可以回到上级目录，`Capslock+=`可以前进到下一层目录如果要搜索类似网址的关键字，请带上搜索命令，如`s com.com`，否则将被当成网址打开`Capslock+settings.ini`中，提供给`Qbar`使用的段名`[QSearch],[QRun],[QWeb]`，支持在键名后加上`<xxx>`来作为提示，它们不会影响命令的使用。例如： `[QWeb]`下有`cx <capslox>=capslox.com`，那么`QBar`下输入`cx`打开`capslox.com``[QRun]`下需要为程序添加启动参数或以管理员权限打开的话，程序路径要用引号引起来，然后在这部分的左边加上`*RunAs`以管理员权限打开，在这部分的右边加上启动参数。例如： `ie=*RunAs "C:\Program Files\Internet Explorer\iexplore.exe" -k` *具体参照`Capslock+SettingsDemo.ini``Ctrl+Enter`会在输入的字符串前后加上`www.``.com`，并当成网址打开。例如： 输入`capslox`->`Ctrl+Enter`->打开`www.capslox.com`Qbar 支持搜索全部已安装程序，如果在启动 Capslock+ 后有安装 / 卸载程序，需要重载 Capslock+ 。[1]: 只有以`http://`或`https://`或`www.`开头，或者包含`.com`或`.net`或`.org`的字符串才会被认为是网址。否则，请在网址前面加上命令`web`。[2]: 通过修改`Capslock+settings.ini`文件下，`[QSearch]`段的`default`可以设置默认搜索[3]: 在展示输入的路径下的文件时，为了保证加载速度，在文件过多的时候，会放弃加载部分文件的图标，直接使用一个`空白文件`样式的图标[4]: `\`键在文件路径输入时会频繁使用，而`\`键实在太远了，所以特地让`/`键也实现和`\`键一样的功能，如果需要输出`/`符号可以用`Capslock+/` |                                                              |                                                              |
+
+
+
+## 补充说明
+
+请查看原文档 [补充说明](https://capslox.com/capslock-plus/#补充说明)
 
 
 

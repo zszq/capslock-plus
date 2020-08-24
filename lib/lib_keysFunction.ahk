@@ -678,7 +678,7 @@ keyFunc_openCpasDocs(){
     ; } else {
     ;     Run, https://capslox.com/capslock-plus/en.html
     ; }
-    Run, https://github.com/zszq/capslock-plus
+    Run, https://github.com/zszq/CapsLockHotkey
     return
 }
 
