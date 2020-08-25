@@ -1,10 +1,17 @@
+## 前言
 
-## 前言 ##
-　　**CapsLockHotkey** 是参考CapsLock+[（CapsLock+版本）](https://github.com/wo52616111/capslock-plus)和CapsLockPlus（CapsLock+修改版）[（CapsLockPlus版本）](https://github.com/PatrickShieh/CapsLockPlus)再次修改，在两位作者的布局和功能基础上尽量保持原布局和功能的同时进行了优化，以适合自己日常使用。如果是经常用键盘输入文字（如程序员），相信你在半天时间就能完全上手。
+　　感谢CapsLock+开源这款工具，和作者交流了一下，说有时间会继续优化，可以关注并打赏原作者[（开源作者）](https://github.com/wo52616111/capslock-plus)。
 
-　　感谢CapsLock+开源这款工具， 2020-04-25作者重新更新了，但是新的布局很不友好，交流了一下，作者说有时间了会继续优化，可以关注并打赏原作者[（开源作者）](https://github.com/wo52616111/capslock-plus)。
+　　2020-04-25作者重新更新，但新的布局很不友好，于是用了三四天时间看了下autohotkey，并在最新版本的基础上对其进行了一些更改，以适合自己日常使用。
 
-　　如CapsLockPlus作者所说：本人是个键盘党，还是个程序猿，非常不喜欢敲代码敲得嗨时，还要去碰鼠标、右手移动一段距离去操作方向键，删除键等等。噢，对了，还很讨厌Ctrl键，因为使用Ctrl组合键时，左手要离开键盘一段距离，神烦。试想下，双手不用离开字母区，是不是很爽，嘿嘿。
+　　修改初衷，如CapsLockPlus作者所说：本人是个键盘党，还是个程序猿，非常不喜欢敲代码敲得嗨时，还要去碰鼠标、右手移动一段距离去操作方向键，删除键等等。噢，对了，还很讨厌Ctrl键，因为使用Ctrl组合键时，左手要离开键盘一段距离，神烦。试想下，双手不用离开字母区，是不是很爽，嘿嘿。
+
+　　例如：选中文字 → `CapsLock+Q` → `CapsLock+space` 便自动打开浏览器显示百度搜索结果；按住`CapsLock`滚动鼠标滚轮就可调节音量等。
+
+<br>
+
+
+　　**CapsLockHotkey** 是参考CapsLock+（原版）和CapsLockPlus的布局（CapsLock+另一个修改版），尽量保持原布局和功能的同时进行了再次修改和优化。如果是经常用键盘输入文字（如程序员），相信你在半天时间就能完全上手。
 
 <br>
 
@@ -12,12 +19,13 @@ CapsLockHotkey：[下载地址](https://github.com/zszq/CapsLockHotkey/releases)
 
 <br>
 
-#### 已知可能会出现的问题：
+### 已知可能会出现的问题：
 
 1. **启动之后不报错按键没有任何反应，请查看360等安全软件是否拦截了模拟按键，并加入白名单！！！**
 2. `ctrl + v` 进行粘贴时会出现 ctrl不起作用，只有v键起作用了。 解决方法：删除 v键输出的内容重新粘贴，或者用软件自带的 `capslock + v` 进行粘贴，或者`capslock + f8`关闭软件自带复制粘贴功能。
 3. 通过`Ctrl+Alt+Capslock`快捷键启动 CapsLockHotkey，在桌面使用快捷键不起作用。解决方法：请激活任意软件后使用快捷键启动，或者双击软件启动。如果已经在桌面按了快捷键，在激活软件情况下还是没反应，请先切换下capslock键再重新尝试。如果在桌面使用快捷键造成切换大小写相反，请再次在桌面使用`Ctrl+Alt+Capslock`快捷键操作一次。（此bug待作者修复，推荐将其固定到开始菜单，通过点击启动。）
-4. 其他问题请查看 [原文档](https://capslox.com/capslock-plus/#使用)
+4. IDEA的默认快捷键有点奇葩，比如`ctrl+y`这些，所以此软件部分操作在IDEA上可能出现问题（测试小括号，中括号，大括号，尖括号会出问题，影响不大，用shift默认操作方式可解决），其他大部分操作没有任何问题，如有需要也可自行参考文档修改。
+5. 其他问题请查看 [原文档](https://capslox.com/capslock-plus/#使用)
 
 <br>
 
@@ -58,7 +66,7 @@ DAAS                | <font color="#dd0000">✘</font>     | <font color="#00dd0
 #### 1. Caps + Key ####
 >以下省略了CapsLock键，默认是要加上的，未设置功能键的可自行设置。
 
-![ddqToV.png](https://s1.ax1x.com/2020/08/23/ddqToV.png)
+![d6Dg6P.png](https://s1.ax1x.com/2020/08/25/d6Dg6P.png)
 
 **1.1 CapsLock + 鼠标**
 
@@ -73,7 +81,7 @@ DAAS                | <font color="#dd0000">✘</font>     | <font color="#00dd0
 #### 2. Caps + Alt + Key
 >以下省略了CapsLock + Alt键，默认是要加上的，未设置功能键的可自行设置。
 
-![ddqbJU.png](https://s1.ax1x.com/2020/08/23/ddqbJU.png)
+![d6rwj0.png](https://s1.ax1x.com/2020/08/25/d6rwj0.png)
 
 **2.1 CapsLock + Alt + 鼠标**（临时改变鼠标速度，并在松开后复原，默认是3，范围是1~20。用于精细化操作，如：截图、取色等）
 
@@ -88,7 +96,7 @@ DAAS                | <font color="#dd0000">✘</font>     | <font color="#00dd0
 #### 3. Caps + Shift + Key
 >以下省略了CapsLock + Shift键，默认是要加上的，未设置功能键的可自行设置。
 
-![ddqLz4.png](https://s1.ax1x.com/2020/08/23/ddqLz4.png)
+![d6sXi4.png](https://s1.ax1x.com/2020/08/25/d6sXi4.png)
 
 **3.1 CapsLock + Shift + 鼠标**
 
@@ -195,7 +203,7 @@ DAAS                | <font color="#dd0000">✘</font>     | <font color="#00dd0
 >| `tb xxx`                                                     | 淘宝搜索`xxx`                                                |                                                              |
 >| `aa bb`                                                      | 用`aa`打开`bb`                                               | `aa`：`[QRun]`上有记录的一个程序`bb`：`[QRun] / [QWeb]`上有记录的一个文件（夹） / 网址简写，或具体的文件（夹）路径 / 网址例如： `[Qrun]`下记录了`ie=C:\Program Files\Internet Explorer\iexplore.exe` `[QWeb]`记录了`clp=http://cjkis.me/capslock+/` 那`ie clp`就可以用`ie`来打开`http://cjkis.me/capslock+/` 也可以直接`ie cjkis.me/capslock+` |
 >| `xxx`                                                        | 如果`[QRun]`或`[QWeb]`内有记录则运行对应文件或打开对应网址如果是文件（夹）路径，打开该文件（夹）如果是网址[1]，打开该网址不是以上情况的话，百度[2] |                                                              |
->| 能根据输入，展示`[QRun]`和`[QWeb]`的记录，或输入的路径下的文件（夹）[3]可以使用通配符`?`和`*`来匹配任意一个 / 多个字符，例如： `?at`可以匹配 `bat`, `cat`, `fat`... `g*d`可以匹配 `god`, `good`, `gold`...无提示列表的情况下`Tab`展开提示列表（如果`QRun`或`QWeb`有记录的话）有提示列表的情况下，如果有选中某文件名，`Tab`可以将选中的文件名放到输入框，否则，会将第一个文件名放到输入框在展示路径下的文件时，`\`键（或`/`[4]）可以将文件（夹）名填入输入框，`Capslock+-`可以回到上级目录，`Capslock+=`可以前进到下一层目录如果要搜索类似网址的关键字，请带上搜索命令，如`s com.com`，否则将被当成网址打开`Capslock+settings.ini`中，提供给`Qbar`使用的段名`[QSearch],[QRun],[QWeb]`，支持在键名后加上`<xxx>`来作为提示，它们不会影响命令的使用。例如： `[QWeb]`下有`cx <capslox>=capslox.com`，那么`QBar`下输入`cx`打开`capslox.com``[QRun]`下需要为程序添加启动参数或以管理员权限打开的话，程序路径要用引号引起来，然后在这部分的左边加上`*RunAs`以管理员权限打开，在这部分的右边加上启动参数。例如： `ie=*RunAs "C:\Program Files\Internet Explorer\iexplore.exe" -k` *具体参照`Capslock+SettingsDemo.ini``Ctrl+Enter`会在输入的字符串前后加上`www.``.com`，并当成网址打开。例如： 输入`capslox`->`Ctrl+Enter`->打开`www.capslox.com`Qbar 支持搜索全部已安装程序，如果在启动 Capslock+ 后有安装 / 卸载程序，需要重载 Capslock+ 。[1]: 只有以`http://`或`https://`或`www.`开头，或者包含`.com`或`.net`或`.org`的字符串才会被认为是网址。否则，请在网址前面加上命令`web`。[2]: 通过修改`Capslock+settings.ini`文件下，`[QSearch]`段的`default`可以设置默认搜索[3]: 在展示输入的路径下的文件时，为了保证加载速度，在文件过多的时候，会放弃加载部分文件的图标，直接使用一个`空白文件`样式的图标[4]: `\`键在文件路径输入时会频繁使用，而`\`键实在太远了，所以特地让`/`键也实现和`\`键一样的功能，如果需要输出`/`符号可以用`Capslock+/` |                                                              |                                                              |
+>| 能根据输入，展示`[QRun]`和`[QWeb]`的记录，或输入的路径下的文件（夹）[3]可以使用通配符`?`和`*`来匹配任意一个 / 多个字符，例如： `?at`可以匹配 `bat`, `cat`, `fat`... `g*d`可以匹配 `god`, `good`, `gold`...无提示列表的情况下`Tab`展开提示列表（如果`QRun`或`QWeb`有记录的话）有提示列表的情况下，如果有选中某文件名，`Tab`可以将选中的文件名放到输入框，否则，会将第一个文件名放到输入框在展示路径下的文件时，`\`键（或`/`[4]）可以将文件（夹）名填入输入框，`Capslock+-`可以回到上级目录，`Capslock+=`可以前进到下一层目录如果要搜索类似网址的关键字，请带上搜索命令，如`s com.com`，否则将被当成网址打开`Capslock+settings.ini`中，提供给`Qbar`使用的段名`[QSearch],[QRun],[QWeb]`，支持在键名后加上`<xxx>`来作为提示，它们不会影响命令的使用。例如： `[QWeb]`下有`cx <capslox>=capslox.com`，那么`QBar`下输入`cx`打开`capslox.com``[QRun]`下需要为程序添加启动参数或以管理员权限打开的话，程序路径要用引号引起来，然后在这部分的左边加上`*RunAs`以管理员权限打开，在这部分的右边加上启动参数。例如： `ie=*RunAs "C:\Program Files\Internet Explorer\iexplore.exe" -k` *具体参照`Capslock+SettingsDemo.ini``Ctrl+Enter`会在输入的字符串前后加上`www.``.com`，并当成网址打开。例如： 输入`capslox`->`Ctrl+Enter`->打开`www.capslox.com`Qbar 支持搜索全部已安装程序，如果在启动 Capslock+ 后有安装 / 卸载程序，需要重载 Capslock+ 。[1]: 只有以`http://`或`https://`或`www.`开头，或者包含`.com`或`.net`或`.org`的字符串才会被认为是网址。否则，请在网址前面加上命令`web`。[2]: 通过修改`Capslock+settings.ini`文件下，`[QSearch]`段的`default`可以设置默认搜索[3]: 在展示输入的路径下的文件时，为了保证加载速度，在文件过多的时候，会放弃加载部分文件的图标，直接使用一个`空白文件`样式的图标[4]: `\`键在文件路径输入时会频繁使用，而`\`键实在太远了，所以特地让`/`键也实现和`\`键一样的功能，如果需要输出`/`符号可以用`Capslock+/` | 左侧排版问题不想改了，自行参考 [原文档](https://capslox.com/capslock-plus/#clTabScript) |                                                              |
 
 
 

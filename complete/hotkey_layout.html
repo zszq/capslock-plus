@@ -28,7 +28,7 @@
         .layout .title {
         	margin-bottom: 15px;
         	text-align: center;
-        	color: #0080c0;
+        	color: #0099CC;
         	font-size: 18px;
         	font-weight: bold;
         }
@@ -47,6 +47,10 @@
         button:hover{
           box-shadow: 0px 0px 4px 1px rgba(79, 239, 239, 61),0px 0px 4px 0px rgba(0, 255, 255, 61);
           transform: scale(1.03);
+        }
+        .pressed {
+            background-color: #0099CC;
+            color: #fff;
         }
     </style>
     <body>
@@ -104,7 +108,7 @@
             </div>
             <!-- 第4排 -->
             <div class="row">
-            	<button style="width: 120px;">CapsLock <br> <span></span></button>
+            	<button class="pressed" style="width: 120px;">CapsLock <br> <span></span></button>
                 <button>A <br> <span>backspace前删除</span></button>
                 <button>S <br> <span>delete后删除</span></button>
                 <button>D <br> <span>ctrl+s保存</span></button>
@@ -138,7 +142,7 @@
             	<button style="width: 120px;">Ctrl <br> <span></span></button>
                 <button>Window <br> <span></span></button>
                 <button>Alt <br> <span></span></button>
-                <button style="width: 480px;">Spance <br> <span></span></button>
+                <button style="width: 480px;">Spance <br> <span>Enter键</span></button>
                 <button>Alt <br> <span></span></button>
                 <button>Fn <br> <span></span></button>
                 <button style=" width: 103px;">Command <br> <span></span></button>
@@ -204,7 +208,7 @@
             </div>
             <!-- 第4排 -->
             <div class="row">
-            	<button style="width: 120px;">CapsLock <br> <span></span></button>
+            	<button class="pressed" style="width: 120px;">CapsLock <br> <span></span></button>
                 <button>A <br> <span>ctrl+backspace左单词删除</span></button>
                 <button>S <br> <span>ctrl+delete右单词删除</span></button>
                 <button>D <br> <span></span></button>
@@ -237,7 +241,7 @@
             <div class="row">
             	<button style="width: 120px;">Ctrl <br> <span></span></button>
                 <button>Window <br> <span></span></button>
-                <button>Alt <br> <span></span></button>
+                <button class="pressed">Alt <br> <span></span></button>
                 <button style="width: 480px;">Spance <br> <span></span></button>
                 <button>Alt <br> <span></span></button>
                 <button>Fn <br> <span></span></button>
@@ -303,7 +307,7 @@
             </div>
             <!-- 第4排 -->
             <div class="row">
-            	<button style="width: 120px;">CapsLock <br> <span></span></button>
+            	<button class="pressed" style="width: 120px;">CapsLock <br> <span></span></button>
                 <button>A <br> <span>删除光标左边至行首</span></button>
                 <button>S <br> <span>删除光标右边至行末</span></button>
                 <button>D <br> <span></span></button>
@@ -319,7 +323,7 @@
             </div>
             <!-- 第5排 -->
             <div class="row">
-            	<button style="width: 170px;">Shift <br> <span></span></button>
+            	<button class="pressed" style="width: 170px;">Shift <br> <span></span></button>
                 <button>Z <br> <span></span></button>
                 <button>X <br> <span></span></button>
                 <button>C <br> <span></span></button>

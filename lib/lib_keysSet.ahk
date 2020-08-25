@@ -669,7 +669,7 @@ keySchemeInit_capslockPlusMix(){
     if(!keyset.caps_slash)
         keyset.caps_slash:="keyFunc_CommonLine"
     if(!keyset.caps_space)
-        keyset.caps_space:="keyFunc_doNothing"
+        keyset.caps_space:="keyFunc_enter"
     if(!keyset.caps_ralt)
         keyset.caps_ralt:="keyFunc_doNothing"
 
