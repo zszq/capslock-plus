@@ -77,9 +77,7 @@ Process Priority,,High
 start:
 
 ;-----------------START-----------------
-global ctrlZ, CapsLock2, CapsLock, CapsLockOpen
-
-CapsLockOpen:=CLSets.Global.CapslockOpen!=""?CLSets.Global.CapslockOpen:true
+global ctrlZ, CapsLock2, CapsLock
 
 Capslock::
 ;ctrlZ:     Capslock+Z undo / redo flag
@@ -105,7 +103,7 @@ if CapsLock2
     ;     SetCapsLockState, % GetKeyState("CapsLock","T") ? "Off" : "On"
     ; }
     ; ; sendinput, {esc}
-    if (!CapslockOpen)  ; 为了大小写切换默认打开，取反
+    if (CLSets.global.CapslockOpen)
         SetCapsLockState, % GetKeyState("CapsLock","T") ? "Off" : "On"
 }
 CapsLock2:=""

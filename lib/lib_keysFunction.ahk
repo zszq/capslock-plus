@@ -1022,23 +1022,20 @@ keyFunc_enterUpWherever(){
 
 ; CapsLock大小写切换开关
 keyFunc_capsLockOpen(){
-    global
-    if(CapslockOpen)
+    if(CLSets.global.CapslockOpen)
     {
         ; 已开启，则关闭
         SetCapsLockState, Off
-        CapslockOpen:=false
-        setSettings("Global","CapslockOpen",CapslockOpen)
-        showMsg("CapsLock On", 1000) ; 为了启动默认打开，if (!CapslockOpen)取反，提示信息取反
+        setSettings("Global","CapslockOpen",0)
+        showMsg("CapsLock Off", 1000)
     }
     else
     {
         ; 已关闭，则打开
         SetCapsLockState, On
         SetCapsLockState, Off
-        CapslockOpen:=true
-        setSettings("Global","CapslockOpen",CapslockOpen)
-        showMsg("CapsLock Off", 1000) ; 为了启动默认打开，if (!CapslockOpen)取反，提示信息取反
+        setSettings("Global","CapslockOpen",1)
+        showMsg("CapsLock On", 1000)
     }
     return
 }
